@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_district"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:elevation="2dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/districtName"
+            android:textColor="@color/card_dark"
+            android:text="District Name"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/imageFlag"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:backgroundTint="@color/card_dark"
+            android:padding="5dp"
+            android:src="@drawable/forward_arrow" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
